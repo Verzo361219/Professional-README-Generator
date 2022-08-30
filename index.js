@@ -99,7 +99,7 @@ const questions = [
         type: 'lsit',
         name: 'license',
         message: 'Which license will you use for your project?',
-        choices: ['MIT', 'Apache', 'Mozilla', 'No License']
+        choices: ['MIT', 'Apache', 'Mozilla', 'Boost Saftware', 'Eclipse', 'No License']
     },
     {
         type: 'input',
