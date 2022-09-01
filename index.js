@@ -99,7 +99,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license will you use for your project?',
-        choices: ['MIT', 'Apache', 'Mozilla', 'Boost Saftware', 'Eclipse', 'No License']
+        choices: ['MIT', 'Apache', 'Mozilla', 'Boost Software', 'Eclipse', 'No License']
     },
     {
         type: 'confirm',
