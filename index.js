@@ -102,7 +102,7 @@ const questions = [
         choices: ['MIT', 'Apache', 'Mozilla', 'Boost Saftware', 'Eclipse', 'No License']
     },
     {
-        type: 'input',
+        type: 'confirm',
         name: 'confirmContributors',
         message: 'Would you like to allow other developers to contribute to your project?',
         default: true
@@ -111,8 +111,9 @@ const questions = [
         type: 'input',
         name: 'contribute',
         message: 'Please provide rules for contribution on your project.',
-        when: ({ confirmContributers }) => {
-            if (confirmContributers) {
+        when: ({ confirmContributors }) => {
+            console.log(confirmContributors);
+            if (confirmContributors) {
                 return true;
             } else {
                 return false;

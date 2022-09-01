@@ -47,10 +47,10 @@ function renderLicenseTOC(license) {
     return ' ';
   }
  }
- 
+
 // Function to return a message if user doesn't want contributors
-function renderContributingSection(confirmContributers, data) {
-  if (!confirmContributers) {
+function renderContributingSection(confirmContributors, data) {
+  if (!confirmContributors) {
     return `
   Thank you for your interest in helping out; however, I will not be accepting contributions from third parties.
     `;
@@ -91,7 +91,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
   ## [Contributing](#table-of-contents)
   
-  ${renderContributingSection(data.confirmContributers, data.contribute)}
+  ${renderContributingSection(data.confirmContributors, data.contribute)}
   ## [Tests](#table-of-contents)
   ${data.test}
   ## [Questions](#table-of-contents)
