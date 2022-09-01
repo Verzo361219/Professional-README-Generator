@@ -96,7 +96,7 @@ const questions = [
         }
     },
     {
-        type: 'lsit',
+        type: 'list',
         name: 'license',
         message: 'Which license will you use for your project?',
         choices: ['MIT', 'Apache', 'Mozilla', 'Boost Saftware', 'Eclipse', 'No License']
@@ -142,11 +142,43 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//Create a function to write README file
+const writeFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./test/generated-Readme.md', fileContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
 
-// TODO: Create a function to initialize app
-function init() {}
+            resolve({
+                ok: true,
+                message: 'File Created!!'
+            });
+        });
+    });
+};
+
+//Function to prompt questions and store inputs
+function init() {
+    return inquirer.prompt(questions)
+    .then(readmeData => {
+        return readmeData;
+    })
+}
 
 // Function call to initialize app
-init();
+init()
+.then(readmeData => {
+    console.log(readmeData);
+    return generateMarkdown(readmeData);
+})
+.then(pageMD => {
+    return writeFile(pageMD);
+})
+.then(writeFileResponse => {
+    console.log(writeFileResponse.message);
+})
+.catch(err => {
+    console.log(err);
+});
