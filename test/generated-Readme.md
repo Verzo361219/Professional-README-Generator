@@ -1,8 +1,8 @@
 
-  # Professional-README-Generator
+  # Title
   
   
-  ![badge](https://img.shields.io/badge/license-No License-blue)
+  ![badge](https://img.shields.io/badge/license-Mozilla-blue)
     
   ## Table-of-Contents
   * [Description](#description)
@@ -16,12 +16,12 @@
   * [Questions](#questions)
   
   ## [Description](#table-of-contents)
-  My project is a script that will take in user input through node to generate a well organized and detailed README. 
-  To better help users to be able to create clean and professioanl looking README's.
+  Brief Description
+  Project Reason
   ## [Installation](#table-of-contents)
-  Navigate to my GitHub page, then to the Proffessional-README-generator repo and copy the code. Then install the necessary JSON packages and you should be good to go!!
+  Install Instruction
   ## [Usage](#table-of-contents)
-  A good example of how this could be used is this project itself. This readme was generated using the script. 
+  Instruction Time
   
   For more information on how to add screenshots for examples, visit the following website:
   
@@ -31,17 +31,17 @@
   ## [License](#table-of-contents)
   The application is covered under the following license:
   
-  [No License](https://choosealicense.com/licenses/No License)
+  [Mozilla](https://choosealicense.com/licenses/Mozilla)
     
     
   ## [Contributing](#table-of-contents)
   
   
-  Thank you for your interest in helping out; however, I will not be accepting contributions from third parties.
+  Rules
     
   ## [Tests](#table-of-contents)
-  Once you have the project installed just open a terminal and run node index.js
+  Test Time!!
   ## [Questions](#table-of-contents)
   Please contact me using the following links:
-  [GitHub](https://github.com/Verzo361219)
-  [Email: michaelhobbs361219@gmail.com](mailto:michaelhobbs361219@gmail.com)
+  [GitHub](https://github.com/USERname)
+  [Email: user@email.com](mailto:user@email.com)
